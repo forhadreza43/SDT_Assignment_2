@@ -1,0 +1,231 @@
+html {
+    scroll-behavior: smooth;
+    color: #143774;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    padding: 25px;
+    letter-spacing: 2px;
+    position: sticky;
+    top: 0%;
+    z-index: 2;
+    border-bottom: 2px solid;
+    background-color: #2daffa;
+    color:#143774;
+    text-shadow: 1px 1px 2px #050638;
+    box-shadow: 10px 10px 20px -10px #082668;
+}
+
+
+
+#search-container {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    margin-bottom: 20px;
+    position: sticky;
+    top: 100px;
+}
+#search-bar {
+    border: none;
+    width: 60%;
+    padding: 15px;
+    padding-left: 40px;
+    border-radius: 15px;
+    font-size: 15px;
+    background-color: #c1e4f7;
+}
+#search-container>ion-icon {
+    color: #143774;
+    position: relative;
+    left: 30px;
+    top: 13px;
+    z-index: 3;
+    font-size: 19px;
+}
+
+#results-container {
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 90vw;
+}
+
+#player-unavailable-txt {
+    text-align: center;
+    letter-spacing: 2px;
+    display: none;
+    margin-top: 15%;
+    text-shadow: 1px 1px 2px 1px #070018;
+}
+
+.player-cards {
+    padding: 25px;
+    max-width: 250px;
+    border-radius: 15px;
+    display: grid;
+    place-items: center;
+    background-color: #2daffa;
+    box-shadow: 1px 1px 4px 2px rgb(32, 129, 219);
+    color: aliceblue;
+    margin: 50px;
+}
+
+.player-cards:hover {
+    background-color: hsl(234, 75%, 68%);
+}
+
+.social-media {
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+    padding: 0.5em;
+    margin-top: 0.5em;
+
+}
+.social-media a {
+    color: #ffffff;
+    font-size: 1.2em;
+    
+}
+
+.button-container{
+    display: flex;
+    justify-content: center;
+    gap: 1.5em;
+
+}
+button {
+    background-color: #143774;
+    color: white;
+    padding: 0.6em 0.9em;
+    border: none;
+    border-radius: 1em;
+    cursor: pointer;
+    margin-top: 0.5em;
+    font-size: 0.8em;
+}
+
+button:hover {
+    background-color: #1eaee7;
+}
+
+.player-image {
+    width: 50%;
+    border-radius: 100%;
+    padding: 0.5em;
+    object-fit: contain;
+    /* border-radius: 100px; */
+}
+
+
+.body-container{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+}
+
+.group-size {
+    text-align: center;
+    border-bottom: 2px solid rgb(0, 0, 0);
+    margin-bottom: 1em;
+    /* border: 1px solid rgb(252, 252, 252); */
+}
+.group-title {
+    padding: 0.2em 0;
+}
+.group-member {
+    margin: 0.5em 0;
+    /* padding: 0 1em; */
+    /* padding-right: 2em; */
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.group{
+        padding: 25px;
+        max-width: 250px;
+        border-radius: 15px;
+        display: grid;
+        place-items: center;
+        background-color: #2daffa;
+        box-shadow: 1px 1px 4px 2px rgb(32, 129, 219);
+        color: aliceblue;
+        margin: 50px;
+}
+.profile-image {
+    width: 10%;
+    border-radius: 50%;
+
+}
+@media screen and (max-width: 768px) {
+    .player-cards {
+        margin: 10px;
+    }
+    .player-image {
+        width: 40%;
+    }
+    .group {
+        margin: 10px;
+    }
+    .profile-image {
+        width: 15%;
+    }
+    .group {
+        margin-top: 20px;
+        width: 270px;
+    }
+}
+@media screen and (min-width: 769px) {
+   
+    .body-container {
+        width: 90%;
+        display: flex;
+        flex-direction: row;
+        align-items: start;
+        margin: auto;
+    }
+    .results-container {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 60vw;
+    }
+    .group-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 40vw;
+        margin-top: 0px;
+    }
+    .group{
+        margin: 0px;
+        margin-top: 20px;
+        width: 270px;
+    }
+    
+    .player-cards {
+        margin: 20px;
+        font-size: 1.2rem;
+        max-width: 270px;
+    }
+    .player-image {
+        width: 50%;
+    }
+
+    .profile-image {
+        width: 15%;
+    }
+
+}
